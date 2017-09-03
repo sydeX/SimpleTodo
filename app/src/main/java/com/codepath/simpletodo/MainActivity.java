@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
             // Extract name value from result extras
             String newItemContent = data.getExtras().getString("new_item_content");
             int itemPos = data.getExtras().getInt("item_pos");
-            int code = data.getExtras().getInt("code", 0);
             items.set(itemPos, newItemContent);
             itemsAdapter.notifyDataSetChanged();
             writeItems();
